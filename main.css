@@ -1,0 +1,32 @@
+/* 
+File: css file for CSS Test Project with David Hadley SearchBox
+Author: Gabriel Popa, New Edge Web Services LLC
+*/
+/************ BEGIN GENERAL ITEMS ************/
+html { height: 100%; overflow-x: hidden; overflow-y: scroll;
+    -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust: 100%; }
+body { margin: 0; padding: 0; background-color: #ddd; font-size: 20px; line-height: 30px; color: #000;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, Calibri, Verdana, sans-serif;	
+	background-image: url("cocktails-at-bar_2000.jpg"); background-size: 100% 100%;
+	background-attachment: fixed; background-position: center; background-repeat: no-repeat;}
+nav {display:flex; justify-content:center; margin:0 auto;}
+@keyframes infromAbove { 0% { transform: translateY(-75px); } 100% { transform: translateY(0px); } }
+@keyframes fadeIn { from {opacity: 0} to {opacity: 1}}
+
+#headerNav { display: flex; list-style-type:none;margin:0 auto; animation: infromAbove 1.5s, fadeIn 3s; }
+#headerNav li {margin:25px;}
+#headerNav a:link, 
+  #headerNav a:visited, 
+    #headerNav a:active {text-decoration:none; color:#000; font-weight:bold; padding:5px 8px; border-radius:8px;}
+#headerNav a:hover {color: #0f046c; background-color:#f9f9f9;}
+#main_content {display:flex; flex-direction:column; align-items:center;}
+#main_content img {max-width:30%; height:auto; margin:20px 25px 40px 25px; padding:0; animation: fadeIn 4s; border-radius:150px; box-shadow: 0 0 15px 15px #fff;}
+#address {display:flex; flex-direction:column; align-items:center; animation: fadeIn 4s;}
+#address p { color:#800000; font-weight:bold; margin:0 0 10px 0;}
+#address p:last-child {margin:15px 0;}
+footer {display:flex; flex-direction:column; align-items:flex-end;}
+#footer_links {display: flex; justify-content:space-around; margin-right:25px;}
+#footer_links img {margin: 10px 25px;}
+#copyright {margin-right:25px;}
+#copyright p {font-size:14px; margin:10px; font-weight:bold;}
